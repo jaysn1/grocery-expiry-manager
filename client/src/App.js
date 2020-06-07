@@ -15,12 +15,14 @@ import App2 from "./App2";
 import { Provider } from 'react-redux';
 import store from './store';
 
+const decoded = 0;
 if (localStorage.jwtToken) {
   // Set auth token header auth
   const token = localStorage.jwtToken;
   setAuthToken(token);
   // Decode token and get user info and exp
   const decoded = jwt_decode(token);
+  console.log(decoded);
   // Set user and isAuthenticated
   store.dispatch(setCurrentUser(decoded));
 // Check for expired token
@@ -35,7 +37,7 @@ if (localStorage.jwtToken) {
 
 class App extends Component {
   render() {
-    // console.log()
+    console.log(decoded);
     return (
       <Provider store={store}>
         <Router>

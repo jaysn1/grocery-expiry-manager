@@ -40,7 +40,7 @@ class ItemList extends Component{
                                         {name}
                                         <Button 
                                             className="date-btn"
-                                            color={console.log(expiry_date) ? "danger":"info"}
+                                            // color={console.log(expiry_date) ? "danger":"info"}
                                             >
                                                 <Moment>{expiry_date}</Moment>
                                         </Button>

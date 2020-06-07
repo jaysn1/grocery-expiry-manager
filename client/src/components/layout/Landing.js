@@ -7,13 +7,11 @@ export class Landing extends Component {
             <div className = "container valign-wrapper" style = {{ height: "75vh"}}>
                 <div className = "row">
                     <div className = "col s12 center-align">
-                        <h4>
-                            <b>Build </b> a login app with {" "}
-                            <span style = {{fontFamily: "monospace"}}>MERN</span> stack from scratch
-                        </h4>
                         <p className = "flow-text grey-text darken-text-l">
-                            Create a (minimal) full-stack app with user authentication via passport and JWTs
+                            Register and log on to the website to start adding your grocery items and their expiry dates.
                         </p>
+                        <br />
+                        <br />
                         <br />
                         <div className = "col s6">
                             <Link to = "/register" style = {{ width: "140px", borderRadius: "3px", letterSpacing: "1.5px"}} className = "btn btn-large waves-effect waves-light hoverable blue accent-3">

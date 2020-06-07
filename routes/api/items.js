@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-import store from './store';
 // var LocalStorage = require('node-localstorage').LocalStorage,
 // localStorage = new LocalStorage('./scratch');
 

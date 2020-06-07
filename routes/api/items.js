@@ -1,8 +1,5 @@
 const express = require('express');
 const router = express.Router();
-import store from './store';
-// var LocalStorage = require('node-localstorage').LocalStorage,
-// localStorage = new LocalStorage('./scratch');
 
 // Item Model
 const Item = require('../../models/Item');
@@ -11,7 +8,6 @@ const Item = require('../../models/Item');
 // @desc   GET all items    
 // @access Public
 router.get('/', (request, response) => {
-    // console.log(localStorage);
     Item.find()
       .sort({ date:-1 }) // sorting the items in descending order of the date
       .then(items => response.json(items))  
